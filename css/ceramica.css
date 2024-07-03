@@ -1,0 +1,102 @@
+.banner-container {
+    position: relative;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+.card {
+    border: none;
+    position: relative;
+}
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 1rem;
+}
+
+.category-item img {
+    max-width: 100px; 
+    height: auto;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.banner-text {
+    font-size: 55px;
+    font-weight: 500;
+    color: #fff4bc;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+.btn-circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.filter::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+}
+.form-control-range {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+.form-check-label {
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+@media (max-width: 767px) {
+    .banner-text {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+    .card-body {
+        padding: 15px;
+    }
+    .filter {
+        font-size: 1rem;
+    }
+}

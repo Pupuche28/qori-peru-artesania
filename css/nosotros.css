@@ -1,0 +1,116 @@
+.banner-container {
+    position: relative;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner-text {
+    font-weight: 500;
+    color: #fff4bc;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+
+.info{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.stats-section {
+    background-color: #f5e4c3;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.stats-item h3 {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stats-item p {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.stats-item img {
+    border-radius: 5px;
+}
+
+.personal-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.personal-item h3 {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.personal-item .btn {
+    margin-top: 10px;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: #fff;
+}
+
+.values-section {
+    background-color: #f5e4c3;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.values-item h3 {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.values-item img {
+    border-radius: 5px;
+}
+
+.review-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.review-item .fa-user {
+    font-size: 1.5rem;
+}
+
+.review-item .fa-star {
+    color: #f0ad4e;
+}
+
+.review-item .checked {
+    color: #f0ad4e;
+}
+
+@media (max-width: 767px) {
+    .banner-text {
+        font-size: 1.5em;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,11 @@
+.author { font-weight: bold; }
+.product-title { font-size: 2rem; }
+.stars { font-size: 1.5rem; color: #FFD700; } /* Golden color */
+.reviews { font-size: 1rem; }
+.price { font-size: 2rem; font-weight: bold; }
+.old-price { text-decoration: line-through; }
+.quantity button { width: 40px; }
+.quantity input { max-width: 50px; }
+.buttons button { width: 150px; }
+.card-header { background-color: #f0f0f0; font-weight: bold; }
+.card-body { background-color: #fafafa; }

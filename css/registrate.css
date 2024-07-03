@@ -1,0 +1,19 @@
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section h5 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.custom-checkbox label {
+    margin-left: 20px;
+}
+.btn-custom {
+    background-color: #FFDA80;
+    color: black;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #FFDA80;
+}

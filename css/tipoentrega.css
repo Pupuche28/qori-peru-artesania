@@ -1,0 +1,37 @@
+h5 {
+    font-weight: bold;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+.form-check-label strong {
+    display: block;
+}
+
+.text-muted {
+    font-size: 0.875rem;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}

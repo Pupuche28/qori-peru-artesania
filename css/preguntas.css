@@ -1,0 +1,38 @@
+.banner-container {
+    position: relative;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 55px;
+    font-weight: 500;
+    color: #fff4bc;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+.faq-header {
+    background-color: #FDE8BC;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.faq-body {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+}
+@media (max-width: 767px) {
+    .banner-text {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+}

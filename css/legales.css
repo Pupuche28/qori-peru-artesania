@@ -1,0 +1,50 @@
+.banner-container {
+    position: relative;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 55px;
+    font-weight: 500;
+    color: #fff4bc;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+.legal-section {
+    background-color: #FDE8BC;
+    padding: 60px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.legal-section h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.legal-section p, .legal-section ul {
+    text-align: justify;
+}
+.legal-section ul {
+    padding-left: 20px;
+}
+.legal-section ul li {
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    .banner-text {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+    .legal-section {
+        padding: 30px;
+    }
+}

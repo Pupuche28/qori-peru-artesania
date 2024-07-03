@@ -1,0 +1,50 @@
+.banner-container {
+    position: relative;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 55px;
+    font-weight: 500;
+    color: #fff4bc;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+.privacy-section {
+    background-color: #FDE8BC;
+    padding: 60px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.privacy-section h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.privacy-section p, .privacy-section ul {
+    text-align: justify;
+}
+.privacy-section ul {
+    padding-left: 20px;
+}
+.privacy-section ul li {
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    .banner-text {
+        font-size: 1.2em;
+        padding: 0 20px;
+    }
+    .privacy-section {
+        padding: 30px;
+    }
+}

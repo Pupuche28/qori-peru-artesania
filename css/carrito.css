@@ -1,0 +1,43 @@
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.input-group button {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+}
+
+.card-body .card-title {
+    font-weight: bold;
+}
+
+.card-body .card-text span {
+    font-weight: bold;
+}
+
+.d-flex img {
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .card-body {
+        padding: 15px;
+    }
+}
