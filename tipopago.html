@@ -140,13 +140,13 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="bcpOption1" value="bcpOption1">
                                     <label class="form-check-label" for="bcpOption1">
-                                        Lorem ipsum lorem upsum <i class="bi bi-credit-card"></i>
+                                        Tarjeta de Crédito BCP<i class="bi bi-credit-card"></i>
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="bcpOption2" value="bcpOption2">
                                     <label class="form-check-label" for="bcpOption2">
-                                        Lorem ipsum lorem upsum <i class="bi bi-credit-card"></i>
+                                        Tarjeta de Débito BCP<i class="bi bi-credit-card"></i>
                                     </label>
                                 </div>
                             </div>
@@ -160,7 +160,18 @@
                         </h2>
                         <div id="collapseInterbank" class="accordion-collapse collapse" aria-labelledby="headingInterbank" data-bs-parent="#paymentAccordion">
                             <div class="accordion-body">
-                                <!-- Opciones de Interbank aquí -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="interbankOption1" value="interbankOption1">
+                                    <label class="form-check-label" for="interbankOption1">
+                                        Tarjeta de Crédito Interbank <i class="bi bi-credit-card"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="interbankOption2" value="interbankOption2">
+                                    <label class="form-check-label" for="interbankOption2">
+                                        Tarjeta de Débito Interbank <i class="bi bi-credit-card"></i>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -172,7 +183,12 @@
                         </h2>
                         <div id="collapseMastercard" class="accordion-collapse collapse" aria-labelledby="headingMastercard" data-bs-parent="#paymentAccordion">
                             <div class="accordion-body">
-                                <!-- Opciones de Mastercard aquí -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="mastercardOption" value="mastercardOption">
+                                    <label class="form-check-label" for="mastercardOption">
+                                        Tarjeta Mastercard <i class="bi bi-credit-card"></i> 
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -184,7 +200,18 @@
                         </h2>
                         <div id="collapsePagoefectivo" class="accordion-collapse collapse" aria-labelledby="headingPagoefectivo" data-bs-parent="#paymentAccordion">
                             <div class="accordion-body">
-                                <!-- Opciones de Pagoefectivo aquí -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="pagoEfectivoOption" value="pagoEfectivoOption">
+                                    <label class="form-check-label" for="pagoEfectivoOption">
+                                        PagoEfectivo <i class="bi bi-upc-scan"></i> (Generar código CIP)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="agenteOption" value="agenteOption">
+                                    <label class="form-check-label" for="agenteOption">
+                                        Pago en agente <i class="bi bi-person"></i> (BCP, Interbank, etc.)
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,7 +223,18 @@
                         </h2>
                         <div id="collapseYapePlin" class="accordion-collapse collapse" aria-labelledby="headingYapePlin" data-bs-parent="#paymentAccordion">
                             <div class="accordion-body">
-                                <!-- Opciones de Yape / Plin aquí -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="yapePlinOption" value="yapePlinOption">
+                                    <label class="form-check-label" for="yapePlinOption">
+                                        Yape<i class="bi bi-phone"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="yapePlinOption" value="yapePlinOption">
+                                    <label class="form-check-label" for="yapePlinOption">
+                                        Plin<i class="bi bi-phone"></i>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
