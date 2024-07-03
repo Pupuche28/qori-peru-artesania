@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINOS Y CONDICIONES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/terminos.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="container-fluid" style="background-color: #F8F2E4; font-weight: 700;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand ms-5" href="index.html">
+                    <img src="img/logo.webp" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link  dropdown-toggle" style="color: black;" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                                <li><a class="dropdown-item" href="ceramica.html">Cerámicas</a></li>
+                                <li><a class="dropdown-item" href="joyeria.html">Joyería Artesanal</a></li>
+                                <li><a class="dropdown-item" href="retablos.html">Retablos</a></li>
+                                <li><a class="dropdown-item" href="textiles.html">Textiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="index.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="index.html">¿Eres Artesano?</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="fas fa-search" style="color: black;"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="fas fa-heart" style="color: black;"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart" style="color: black;"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <button class="nav-link nav-link-underline" data-bs-toggle="modal" data-bs-target="#loginModal" style="background: none; border: none; color: black;">
+                                <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Iniciar Sesión
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #FDE8BC; border-radius: 10px;">
+                <div class="modal-header" style="border-bottom: none;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/peru.webp" alt="Logo 1" class="mb-3">
+                    <img src="img/libreartesania.webp" alt="Logo 2" class="mb-3">
+                    <img src="img/secretaría.webp" alt="Logo 3" class="mb-3">
+                    <h5 class="mb-3">INICIAR SESIÓN PARA COMPRAR</h5>
+                    <p class="mb-3">Inicia sesión y accede a beneficios exclusivos para clientes.</p>
+                    <div class="d-flex justify-content-center mb-4">
+                        <a href="#" class="btn btn-primary me-5" style="background-color: #3b5998; border: none;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-primary" style="background-color: #ea4335; border: none;"><i class="fab fa-google"></i></a>
+                    </div>
+                    <form>
+                        <div class="mb-3 text-start">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="mb-3 text-start">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                        <div class="d-flex justify-content-between mt-2">
+                            <a href="#" class="form-text">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3" style="background-color: #FBD88F; border: none; color: black;">Ingresar</button>
+                    </form>
+                    <p class="mb-2 text-center">¿Aún no tienes cuenta? <a href="registrate.html">Regístrate</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Banner -->
+    <div class="container-fluid p-0">
+        <div class="row align-items-center no-gutters">
+            <div class="col-12 banner-container">
+                <img src="img/terminos.webp" alt="Banner Image" class="img-fluid w-100">
+                <div class="banner-text">TERMINOS Y CONDICIONES</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+    </div>
+
+    <!-- Información -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 legal-section">
+                <h2>TÉRMINOS LEGALES GENERALES DE QORI PERÚ</h2>
+                <p><strong>1. USO DEL SITIO WEB</strong></p>
+                <p>Al utilizar el sitio web de Qori Perú, te comprometes a:</p>
+                <ul>
+                    <li>No utilizar el sitio web para fines ilegales o no autorizados.</li>
+                    <li>No interferir con el funcionamiento del sitio web ni intentar acceder a áreas restringidas sin autorización.</li>
+                    <li>No utilizar el sitio web para enviar spam, virus u otro tipo de contenido malicioso.</li>
+                    <li>Respetar los derechos de propiedad intelectual de Qori Perú y de terceros.</li>
+                </ul>
+
+                <p><strong>2. CUENTAS DE USUARIO</strong></p>
+                <p>Si creas una cuenta en nuestro sitio web, eres responsable de mantener la confidencialidad de tus datos de acceso y de todas las actividades que se realicen en tu cuenta.</p>
+
+                <p><strong>3. COMUNICACIONES ELECTRÓNICAS</strong></p>
+                <p>Al utilizar nuestro sitio web o enviar correos electrónicos a Qori Perú, aceptas recibir comunicaciones electrónicas de nuestra parte. Estas comunicaciones pueden incluir correos electrónicos transaccionales (confirmaciones de pedido, notificaciones de envío) y correos electrónicos promocionales (ofertas especiales, nuevos productos). Puedes darte de baja de los correos electrónicos promocionales en cualquier momento.</p>
+
+                <p><strong>4. ENLACES A SITIOS WEB DE TERCEROS</strong></p>
+                <p>Nuestro sitio web puede contener enlaces a sitios web de terceros. No nos hacemos responsables del contenido ni de las prácticas de privacidad de estos sitios web. Te recomendamos leer los términos y condiciones y la política de privacidad de cada sitio web que visites.</p>
+
+                <p><strong>5. MODIFICACIONES DE LOS TÉRMINOS</strong></p>
+                <p>Nos reservamos el derecho de modificar estos Términos Legales Generales en cualquier momento. Te notificaremos cualquier cambio significativo publicando los términos actualizados en nuestro sitio web.</p>
+
+                <p><strong>6. LEY APLICABLE Y JURISDICCIÓN</strong></p>
+                <p>Estos Términos Legales Generales se rigen por las leyes de Perú. Cualquier disputa que surja de estos términos estará sujeta a la jurisdicción exclusiva de los tribunales peruanos.</p>
+
+                <p><strong>7. CONTACTO</strong></p>
+                <p>Si tienes alguna pregunta sobre estos Términos Legales Generales, no dudes en ponerte en contacto con nosotros a través de QORIPERU@GMAIL.COM.</p>
+
+                <p>13/06/2024</p>
+                <p><strong>QORI PERÚ S.A.C</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Tus pedidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: black; text-decoration: none;">Pedidos</a></li>
+                        <li><a href="cambios.html" style="color: black; text-decoration: none;">Envíos</a></li>
+                        <li><a href="#" style="color: black; text-decoration: none;">Formas de pago</a></li>
+                        <li><a href="cambios.html" style="color: black; text-decoration: none;">Cambio y devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Atención al cliente</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="preguntas.html" style="color: black; text-decoration: none;">Preguntas frecuentes</a></li>
+                        <li><a href="contactos.html" style="color: black; text-decoration: none;">Contáctanos</a></li>
+                        <li><img src="img/libro.webp" alt="Libro de Reclamaciones"></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Acerca de</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="nosotros.html" style="color: black; text-decoration: none;">Sobre nosotros</a></li>
+                        <li><a href="legales.html" style="color: black; text-decoration: none;">Legales generales</a></li>
+                        <li><a href="terminos.html" style="color: black; text-decoration: none;">Términos y condiciones</a></li>
+                        <li><a href="politicas.html" style="color: black; text-decoration: none;">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes sociales</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <a href="index.html"><img src="img/logo.webp" alt="QORI PERU" style="width: 200px; margin-top: 20px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom py-3">
+        <div class="container">
+            <p class="text-center mb-0">QORI PERÚ S.A.C 2024 - Todos los Derechos Reservados ©</p>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://kit.fontawesome.com/79be0d4522.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

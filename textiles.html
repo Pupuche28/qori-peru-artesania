@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOYERÍA ARTESANAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/textiles.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="container-fluid" style="background-color: #F8F2E4; font-weight: 700;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand ms-5" href="index.html">
+                    <img src="img/logo.webp" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link  dropdown-toggle" style="color: black;" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                                <li><a class="dropdown-item" href="ceramica.html">Cerámicas</a></li>
+                                <li><a class="dropdown-item" href="joyeria.html">Joyería Artesanal</a></li>
+                                <li><a class="dropdown-item" href="retablos.html">Retablos</a></li>
+                                <li><a class="dropdown-item" href="textiles.html">Textiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="index.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="index.html">¿Eres Artesano?</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-underline" style="color: black;" href="contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="fas fa-search" style="color: black;"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="fas fa-heart" style="color: black;"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart" style="color: black;"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <button class="nav-link nav-link-underline" data-bs-toggle="modal" data-bs-target="#loginModal" style="background: none; border: none; color: black;">
+                                <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Iniciar Sesión
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #FDE8BC; border-radius: 10px;">
+                <div class="modal-header" style="border-bottom: none;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/peru.webp" alt="Logo 1" class="mb-3">
+                    <img src="img/libreartesania.webp" alt="Logo 2" class="mb-3">
+                    <img src="img/secretaría.webp" alt="Logo 3" class="mb-3">
+                    <h5 class="mb-3">INICIAR SESIÓN PARA COMPRAR</h5>
+                    <p class="mb-3">Inicia sesión y accede a beneficios exclusivos para clientes.</p>
+                    <div class="d-flex justify-content-center mb-4">
+                        <a href="#" class="btn btn-primary me-5" style="background-color: #3b5998; border: none;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-primary" style="background-color: #ea4335; border: none;"><i class="fab fa-google"></i></a>
+                    </div>
+                    <form>
+                        <div class="mb-3 text-start">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="mb-3 text-start">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                        <div class="d-flex justify-content-between mt-2">
+                            <a href="#" class="form-text">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3" style="background-color: #FBD88F; border: none; color: black;">Ingresar</button>
+                    </form>
+                    <p class="mb-2 text-center">¿Aún no tienes cuenta? <a href="registrate.html">Regístrate</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 banner-container">
+                <img src="img/textiles.webp" alt="Banner Image" class="img-fluid w-100">
+                <div class="banner-text">TEXTILES</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+    </div>
+
+    <!-- Categoría -->
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none; color: black;"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: black;">Productos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Textiles</li>
+            </ol>
+        </nav>
+        <div class="row justify-content-center text-center">
+            <div class="col-6 col-sm-4 col-md-2 category-item">
+                <img src="img/orfebreriaJ.webp" alt="Decorativos">
+                <h5>Accesorios</h5>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 category-item">
+                <img src="img/filigranaJ.webp" alt="Nacimientos">
+                <h5>Vestimentas</h5>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 category-item">
+                <img src="img/hojalateriaJ.webp" alt="Utilitarios">
+                <h5>Bolsos</h5>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 category-item">
+                <img src="img/herreriaJ.webp" alt="Maceteros">
+                <h5>Cojines</h5>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 category-item">
+                <img src="img/bisuteriaJ.webp" alt="Nuevos">
+                <h5>Correas</h5>
+            </div>
+        </div>                      
+    </div>
+
+    <!-- Contenedor de notificaciones -->
+    <div id="toast-container" style="position: fixed; top: 1rem; right: 1rem; z-index: 1050;"></div>
+
+    <!-- Productos y Filtro -->
+    <div class="container mt-5">
+        <div class="row" >
+            <div class="col-12 col-md-3 mb-3">
+                <h5 class="filter">Categorías</h5>
+                <select class="form-control mb-3">
+                    <option>Seleccionar categoría</option>
+                </select>
+                <h5 class="filter">Filtrar por precio</h5>
+                <div class="form-group">
+                    <input type="range" class="form-control-range" min="30" max="1000" id="priceRange">
+                    <div class="d-flex justify-content-between">
+                        <span>S/30</span>
+                        <span>S/1000</span>
+                    </div>
+                    <button class="btn btn-warning mt-4 mb-4 btn-block">Filtrar</button>
+                </div>
+                <h5 class="filter">Materiales</h5>
+                <select class="form-control mb-3">
+                    <option>Seleccionar categoría</option>
+                </select>
+                <h5 class="filter">Costo de envío</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="shippingCost" id="freeShipping" value="free">
+                    <label class="form-check-label" for="freeShipping">
+                        Gratis
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="shippingCost" id="paidShipping" value="cost">
+                    <label class="form-check-label" for="paidShipping">
+                        Costo
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h5 class="mb-3">6 TEXTILES</h5>
+                <div class="row" id="product-list">
+                    <!-- Producto 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative">
+                            <img src="img/productoj1.webp" class="card-img-top product-image" alt="Florero">
+                            <div class="position-absolute top-0 end-0 mt-2 me-2 d-flex flex-column">
+                                <button class="btn btn-light btn-circle mb-2"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-light btn-circle mb-2 add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-light btn-circle"><a href="productodetalle.html" style="color: black;"><i class="fas fa-eye"></i></a></button>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title product-name">Florero</h6>
+                                <p class="card-text product-subname">Florero cerámica</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted"><s>S/120.00</s></p>
+                                    <p class="font-weight-bold product-price">S/100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative">
+                            <img src="img/productoj2.webp" class="card-img-top product-image" alt="Florero">
+                            <div class="position-absolute top-0 end-0 mt-2 me-2 d-flex flex-column">
+                                <button class="btn btn-light btn-circle mb-2"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-light btn-circle mb-2 add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-light btn-circle"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title product-name">Florero</h6>
+                                <p class="card-text product-subname">Florero cerámica</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted"><s>S/120.00</s></p>
+                                    <p class="font-weight-bold product-price">S/100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                    <!-- Producto 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative">
+                            <img src="img/productoj3.webp" class="card-img-top product-image" alt="Florero">
+                            <div class="position-absolute top-0 end-0 mt-2 me-2 d-flex flex-column">
+                                <button class="btn btn-light btn-circle mb-2"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-light btn-circle mb-2 add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-light btn-circle"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title product-name">Florero</h6>
+                                <p class="card-text product-subname">Florero cerámica</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted"><s>S/120.00</s></p>
+                                    <p class="font-weight-bold product-price">S/100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+
+                    <!-- Producto 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative">
+                            <img src="img/productoj4.webp" class="card-img-top product-image" alt="Florero">
+                            <div class="position-absolute top-0 end-0 mt-2 me-2 d-flex flex-column">
+                                <button class="btn btn-light btn-circle mb-2"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-light btn-circle mb-2 add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-light btn-circle"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title product-name">Florero</h6>
+                                <p class="card-text product-subname">Florero cerámica</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted"><s>S/120.00</s></p>
+                                    <p class="font-weight-bold product-price">S/100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                    
+                    <!-- Producto 5 -->                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative">
+                            <img src="img/productoj5.webp" class="card-img-top product-image" alt="Florero">
+                            <div class="position-absolute top-0 end-0 mt-2 me-2 d-flex flex-column">
+                                <button class="btn btn-light btn-circle mb-2"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-light btn-circle mb-2 add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-light btn-circle"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title product-name">Florero</h6>
+                                <p class="card-text product-subname">Florero cerámica</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted"><s>S/120.00</s></p>
+                                    <p class="font-weight-bold product-price">S/100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <!-- Producto 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative">
+                            <img src="img/productoj6.webp" class="card-img-top product-image" alt="Florero">
+                            <div class="position-absolute top-0 end-0 mt-2 me-2 d-flex flex-column">
+                                <button class="btn btn-light btn-circle mb-2"><i class="fas fa-heart"></i></button>
+                                <button class="btn btn-light btn-circle mb-2 add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="btn btn-light btn-circle"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title product-name">Florero</h6>
+                                <p class="card-text product-subname">Florero cerámica</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted"><s>S/120.00</s></p>
+                                    <p class="font-weight-bold product-price">S/100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Tus pedidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: black; text-decoration: none;">Pedidos</a></li>
+                        <li><a href="cambios.html" style="color: black; text-decoration: none;">Envíos</a></li>
+                        <li><a href="#" style="color: black; text-decoration: none;">Formas de pago</a></li>
+                        <li><a href="cambios.html" style="color: black; text-decoration: none;">Cambio y devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Atención al cliente</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="preguntas.html" style="color: black; text-decoration: none;">Preguntas frecuentes</a></li>
+                        <li><a href="contactos.html" style="color: black; text-decoration: none;">Contáctanos</a></li>
+                        <li><img src="img/libro.webp" alt="Libro de Reclamaciones"></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Acerca de</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="nosotros.html" style="color: black; text-decoration: none;">Sobre nosotros</a></li>
+                        <li><a href="legales.html" style="color: black; text-decoration: none;">Legales generales</a></li>
+                        <li><a href="terminos.html" style="color: black; text-decoration: none;">Términos y condiciones</a></li>
+                        <li><a href="politicas.html" style="color: black; text-decoration: none;">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes sociales</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <a href="index.html"><img src="img/logo.webp" alt="QORI PERU" style="width: 200px; margin-top: 20px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom py-3">
+        <div class="container">
+            <p class="text-center mb-0">QORI PERÚ S.A.C 2024 - Todos los Derechos Reservados ©</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://kit.fontawesome.com/79be0d4522.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QORI PERU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <!-- Pantalla de Carga -->
+    <div id="loading-screen">
+        <img src="img/image 19.webp" alt="QORI PERU">
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <!-- Barra de navegación -->
+        <div class="container-fluid" style="background-color: #F8F2E4; font-weight: 700;">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand ms-5" href="index.html">
+                        <img src="img/logo.webp" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item me-2">
+                                <a class="nav-link nav-link-underline" style="color: black;" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown me-2">
+                                <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                                    <li><a class="dropdown-item" href="ceramica.html">Cerámicas</a></li>
+                                    <li><a class="dropdown-item" href="joyeria.html">Joyería Artesanal</a></li>
+                                    <li><a class="dropdown-item" href="retablos.html">Retablos</a></li>
+                                    <li><a class="dropdown-item" href="textiles.html">Textiles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link nav-link-underline" style="color: black;" href="index.html">Tiendas</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link nav-link-underline" style="color: black;" href="index.html">¿Eres Artesano?</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link nav-link-underline" style="color: black;" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-underline" style="color: black;" href="contactos.html">Contactos</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="#"><i class="fas fa-search" style="color: black;"></i></a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="#"><i class="fas fa-heart" style="color: black;"></i></a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart" style="color: black;"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-5">
+                            <li class="nav-item">
+                                <button class="nav-link nav-link-underline" data-bs-toggle="modal" data-bs-target="#loginModal" style="background: none; border: none; color: black;">
+                                    <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Iniciar Sesión
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #FDE8BC; border-radius: 10px;">
+                    <div class="modal-header" style="border-bottom: none;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/peru.webp" alt="Logo 1" class="mb-3">
+                        <img src="img/libreartesania.webp" alt="Logo 2" class="mb-3">
+                        <img src="img/secretaría.webp" alt="Logo 3" class="mb-3">
+                        <h5 class="mb-3">INICIAR SESIÓN PARA COMPRAR</h5>
+                        <p class="mb-3">Inicia sesión y accede a beneficios exclusivos para clientes.</p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <a href="#" class="btn btn-primary me-5" style="background-color: #3b5998; border: none;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-primary" style="background-color: #ea4335; border: none;"><i class="fab fa-google"></i></a>
+                        </div>
+                        <form>
+                            <div class="mb-3 text-start">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <div class="mb-3 text-start">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                            <div class="d-flex justify-content-between mt-2">
+                                <a href="#" class="form-text">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3" style="background-color: #FBD88F; border: none; color: black;">Ingresar</button>
+                        </form>
+                        <p class="mb-2 text-center">¿Aún no tienes cuenta? <a href="registrate.html">Regístrate</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carrusel -->
+        <div>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carrusel1.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="padding-bottom: 70px;">
+                            <p style="font-size: 45px; font-weight: 500; color: #FFF9C4; text-shadow: 4px 4px 8px #000000;">Descubre la belleza y la autenticidad de lo hecho a mano.</p>
+                            <a href="ceramica.html">
+                                <button type="button" style="background-color: #FBD88F; border: none; border-radius: 15px;"><span class="m-3" style="font-weight: 700;">IR A VER</span></button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrusel2.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="padding-bottom: 70px;">
+                            <p style="font-size: 45px; font-weight: 500; color: #FFF9C4; text-shadow: 4px 4px 8px #000000;">Descubre la belleza y la autenticidad de lo hecho a mano.</p>
+                            <a href="ceramica.html">
+                                <button type="button" style="background-color: #FBD88F; border: none; border-radius: 15px;"><span class="m-3" style="font-weight: 700;">IR A VER</span></button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrusel3.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="padding-bottom: 70px;">
+                            <p style="font-size: 45px; font-weight: 500; color: #FFF9C4; text-shadow: 4px 4px 8px #000000;">Descubre la belleza y la autenticidad de lo hecho a mano.</p>
+                            
+                            <a href="ceramica.html">
+                                <button type="button" style="background-color: #FBD88F; border: none; border-radius: 15px;"><span class="m-3" style="font-weight: 700;">IR A VER</span></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>        
+
+        <div>
+            <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+        </div>
+
+        <!-- En Oferta y Productos Destacados -->
+        <div class="container">
+            <div class="row">
+                <!-- En Oferta -->
+                <div class="col-md-3">
+                    <h3 class="mb-4" style="font-weight: 700;">En Oferta</h3>
+                    <div class="card mb-3" style="background-color: #FDE8BC; border: none; border-radius: 10px;">
+                        <div class="row ">
+                            <div class="col-4">
+                                <img src="img/enoferta1.webp" class="img-fluid rounded-start w-100" style="margin: 30%; cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                            </div>
+
+                            <div class="col-8">
+                                <div class="card-body ms-2">
+                                    <h5 class="card-title">Cerámica</h5>
+                                    <p class="card-text">S/15.00</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="background-color: #FDE8BC; border: none; border-radius: 10px;">
+                        <div class="row">
+                    <div class="col-4">
+                        <img src="img/enoferta2.webp" class="img-fluid rounded-start w-100" style="margin: 30%; cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                    </div>
+
+                            <div class="col-8">
+                                <div class="card-body ms-2">
+                                    <h5 class="card-title">Toro Pucará</h5>
+                                    <p class="card-text">S/15.00</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="background-color: #FDE8BC; border: none; border-radius: 10px;">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="img/enoferta3.webp" class="img-fluid rounded-start w-100" style="margin: 30%; cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                            </div>
+                            
+                            <div class="col-8">
+                                <div class="card-body ms-2">
+                                    <h5 class="card-title">Candelabro</h5>
+                                    <p class="card-text">S/15.00</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productos Destacados -->
+                <div class="col-md-9">
+                    <h3 class="mb-4" style="font-weight: 700;">Productos Destacados</h3>
+                    <div style="background-color: #FDE8BC; padding: 50px; border-radius: 10px;">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-6 col-md-3">
+                                <div class="product-card p-5">
+                                    <img src="img/producD1.webp" alt="Cerámica" class="img-fluid mb-2" style="cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                                    <h5>Cerámica</h5>
+                                    <div class="ratings mb-2">
+                                        <p>★★★★★</p>
+                                    </div>
+                                    <p class="text-decoration-line-through mb-0">S/45.00</p>
+                                    <div class="d-flex">
+                                        <span class="text-danger fw-bold me-2">S/15.00</span>
+                                        <button class="btn btn-sm p-0 me-1"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn-sm p-0"><i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="product-card p-5">
+                                    <img src="img/producD2.webp" alt="Nacimiento" class="img-fluid mb-2" style="cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                                    <h5>Nacimiento</h5>
+                                    <div class="ratings mb-2">
+                                        <p>★★★★★</p>
+                                    </div>
+                                    <p class="text-decoration-line-through mb-0">S/45.00</p>
+                                    <div class="d-flex">
+                                        <span class="text-danger fw-bold me-2">S/15.00</span>
+                                        <button class="btn btn-sm p-0 me-1"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn-sm p-0"><i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="product-card p-5">
+                                    <img src="img/producD3.webp" alt="Chanchito" class="img-fluid mb-2" style="cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                                    <h5>Chanchito</h5>
+                                    <div class="ratings mb-2">
+                                        <p>★★★★★</p>
+                                    </div>
+                                    <p class="text-decoration-line-through mb-0">S/45.00</p>
+                                    <div class="d-flex">
+                                        <span class="text-danger fw-bold me-2">S/15.00</span>
+                                        <button class="btn btn-sm p-0 me-1"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn-sm p-0"><i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="product-card p-5">
+                                    <img src="img/producD4.webp" alt="Retablo" class="img-fluid mb-2" style="cursor: pointer;" onclick="window.location.href='productodetalle.html';">
+                                    <h5>Retablo</h5>
+                                    <div class="ratings mb-2">
+                                        <p>★★★★★</p>
+                                    </div>
+                                    <p class="text-decoration-line-through mb-0">S/45.00</p>
+                                    <div class="d-flex">
+                                        <span class="text-danger fw-bold me-2">S/15.00</span>
+                                        <button class="btn btn-sm p-0 me-1"><i class="far fa-heart"></i></button>
+                                        <button class="btn btn-sm p-0"><i class="fas fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+        </div>
+
+        <!-- Producto Ilimitado -->
+        <div class="container-fluid producto-ilimitado" style="background-color: #FDE8BC; padding: 50px;">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/producIli.webp" alt="Producto Ilimitado" class="producto-img" onclick="window.location.href='productodetalle.html';" style="cursor: pointer;">
+                </div>
+                <div class="col-md-4">
+                    <h1 style="font-weight: 700;">PRODUCTO ILIMITADO</h1>
+                    <h2 style="font-size: 25px;">EVENTO INVIERNO</h2>
+                    <div id="timer" class="timer" style="font-weight: 700; font-size: 50px;">24 D 14 H 10 M 59 S</div>
+                    <button type="button" style="background-color: #FBD88F; border: none; border-radius: 15px;" onclick="window.location.href='productodetalle.html';">
+                        <span class="m-3" style="font-weight: 700;">COMPRAR AHORA</span>
+                    </button>
+                </div>
+            </div>
+        </div>        
+        
+
+        <div>
+            <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+        </div>
+
+        <!-- Datos Irrelevantes -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-custom" onclick="window.location.href='nosotros.html';" style="cursor: pointer;">
+                        <img src="img/imgArtesanos.webp" class="card-img" alt="Artesanos" style="height: 100%;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title" style="font-weight: 700;">ARTESANOS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom" onclick="window.location.href='nosotros.html';" style="cursor: pointer;">
+                        <img src="img/imgBlog.webp" class="card-img" alt="Blog" style="height: 100%;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title" style="font-weight: 700;">BLOG</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card card-custom" onclick="window.location.href='nosotros.html';" style="cursor: pointer;">
+                        <img src="img/imgUbicaciones.webp" class="card-img" alt="Ubicaciones" style="height: 100%;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title" style="font-weight: 700;">UBICACIONES</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+        </div>
+
+        <!-- Sección de características -->
+        <div class="container-fluid features-section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-2 feature">
+                        <img src="img/garantia.webp" alt="Garantía o Devoluciones">
+                        <h5>Garantía o Devoluciones</h5>
+                        <p>Devolución sin problemas,</p>
+                        <p>satisfacción garantizada.</p>
+                    </div>
+                    <div class="col-md-1 d-none d-md-block">
+                        <div class="feature-divider"></div>
+                    </div>
+                    <div class="col-md-2 feature">
+                        <img src="img/mejores.webp" alt="Los Mejores Precios">
+                        <h5>Los Mejores Precios</h5>
+                        <p>Precios bajos,</p>
+                        <p>calidad alta.</p>
+                    </div>
+                    <div class="col-md-1 d-none d-md-block">
+                        <div class="feature-divider"></div>
+                    </div>
+                    <div class="col-md-2 feature">
+                        <img src="img/pago seguro.webp" alt="Pago Seguro">
+                        <h5>Pago Seguro</h5>
+                        <p>Compra seguro,</p>
+                        <p>datos protegidos.</p>
+                    </div>
+                    <div class="col-md-1 d-none d-md-block">
+                        <div class="feature-divider"></div>
+                    </div>
+                    <div class="col-md-2 feature">
+                        <img src="img/envios.webp" alt="Envíos a todo Perú">
+                        <h5>Envíos a todo Perú</h5>
+                        <p>Recibe en casa,</p>
+                        <p>rápido y seguro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="img/background1.webp" class="img-fluid mt-4 mb-4 w-100">
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Tus pedidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: black; text-decoration: none;">Pedidos</a></li>
+                            <li><a href="cambios.html" style="color: black; text-decoration: none;">Envíos</a></li>
+                            <li><a href="#" style="color: black; text-decoration: none;">Formas de pago</a></li>
+                            <li><a href="cambios.html" style="color: black; text-decoration: none;">Cambio y devoluciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Atención al cliente</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="preguntas.html" style="color: black; text-decoration: none;">Preguntas frecuentes</a></li>
+                            <li><a href="contactos.html" style="color: black; text-decoration: none;">Contáctanos</a></li>
+                            <li><img src="img/libro.webp" alt="Libro de Reclamaciones"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Acerca de</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="nosotros.html" style="color: black; text-decoration: none;">Sobre nosotros</a></li>
+                            <li><a href="legales.html" style="color: black; text-decoration: none;">Legales generales</a></li>
+                            <li><a href="terminos.html" style="color: black; text-decoration: none;">Términos y condiciones</a></li>
+                            <li><a href="politicas.html" style="color: black; text-decoration: none;">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Redes sociales</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                        <a href="index.html"><img src="img/logo.webp" alt="QORI PERU" style="width: 200px; margin-top: 20px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <p class="text-center mb-0">QORI PERÚ S.A.C 2024 - Todos los Derechos Reservados ©</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script>
+    <script src="https://kit.fontawesome.com/79be0d4522.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            const mainContent = document.getElementById('main-content');
+
+            loadingScreen.classList.add('hidden');
+
+            loadingScreen.addEventListener('transitionend', function() {
+                mainContent.classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>
